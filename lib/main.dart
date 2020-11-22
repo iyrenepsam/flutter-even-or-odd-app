@@ -3,6 +3,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main()=>runApp(EvenOrOdd());
 
@@ -52,11 +53,18 @@ class _EvenOrOddState extends State<EvenOrOdd> {
 
                 });
 
-                style:TextStyle(fontSize: 50);
+
               },
-              child: Text("CHECK"),
+              child: Text("CHECK",
+              style: TextStyle(fontSize: 20.0,color: Colors.blue),
               ),
-              Text(checkresult),
+                
+
+              ),
+              Text(checkresult,style: TextStyle(fontSize: 30.0),
+
+              ),
+
 
             ],
           ),
